@@ -2,12 +2,15 @@ module Hogger
   class RouteCollection
     attr_accessor :routes
 
+    def initialize
+      self.routes = []
+    end
+
     def draw(&block)
       yield self
     end
 
     def match(uri, options)
-      self.routes ||= []
       self.routes << Route.new(uri, options)
     end
 
