@@ -1,7 +1,7 @@
 module Hogger
   class Application
     def self.routes
-      @@routes ||= RouteCollection.new
+      @@routes ||= Hogger::Routing::RouteCollection.new
     end
 
     def self.routes=(value)
@@ -9,7 +9,7 @@ module Hogger
     end
 
     def initialize
-      self.class.routes ||= RouteCollection.new
+      self.class.routes ||= Hogger::Routing::RouteCollection.new
     end
 
     def call(env)
