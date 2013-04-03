@@ -17,9 +17,9 @@ describe Hogger::Routing::RouteCollection do
     it "creates a Route with specified options" do
       mocked_route = mock
       Hogger::Routing::Route.should_receive(:new).
-          with("/new_uri", controller: controller_class, action: :create).
+          with("/new_path", controller: controller_class, action: :create).
           and_return mocked_route
-      subject.match("/new_uri", controller: controller_class, action: :create)
+      subject.match("/new_path", controller: controller_class, action: :create)
       subject.routes.should include(mocked_route)
     end
   end
@@ -30,7 +30,7 @@ describe Hogger::Routing::RouteCollection do
         controller = mock
         controller_class.should_receive(:new).and_return controller
         controller.should_receive(:new).and_return("HTML CONTENT")
-        subject.dispatch("/hello").should eq "HTML CONTENT"
+        subject.dispatch({ "REQUEST_PATH" => "/hello"}).should eq "HTML CONTENT"
       end
     end
 

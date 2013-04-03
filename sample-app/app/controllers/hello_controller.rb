@@ -1,4 +1,4 @@
-class HelloController
+class HelloController < Hogger::Controller
   def show
     "Hello Controller"
   end

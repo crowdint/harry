@@ -13,7 +13,7 @@ module Hogger
     end
 
     def call(env)
-      body    = self.class.routes.dispatch(env["REQUEST_PATH"])
+      body    = self.class.routes.dispatch(env)
       headers = { "Content-Length" => body.length.to_s }
       [200, headers, [body]]
     end

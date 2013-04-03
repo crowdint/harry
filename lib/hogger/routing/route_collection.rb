@@ -15,12 +15,13 @@ module Hogger
         self.routes << Route.new(uri, options)
       end
 
-      def dispatch(uri)
-        route = self.routes.select { |r| r.matches?(uri) }.first
+      def dispatch(env)
+        path = env["REQUEST_PATH"]
+        route = self.routes.select { |r| r.matches?(path) }.first
         if route
-          route.controller.new.send(route.action)
+          route.controller.new(env).send(route.action)
         else
-          raise RouteNotFoundException, "Route not found: #{uri}"
+          raise RouteNotFoundException, "Route not found: #{path}"
         end
       end
     end

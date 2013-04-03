@@ -10,7 +10,7 @@ describe Hogger::Routing::Route do
   end
 
   describe :initialize do
-    specify { subject.uri.should eq "/home" }
+    specify { subject.path.should eq "/home" }
     specify { subject.controller.should be controller_class }
     specify { subject.action.should be :new }
   end
