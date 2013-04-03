@@ -1,12 +1,12 @@
 require "spec_helper"
 
-describe Hogger::RouteCollection do
+describe Hogger::Routing::RouteCollection do
   let(:controller_class) do
     Class.new
   end
 
   let(:route) do
-    Hogger::Route.new "/hello", controller: controller_class, action: :new
+    Hogger::Routing::Route.new "/hello", controller: controller_class, action: :new
   end
 
   before do
@@ -16,7 +16,7 @@ describe Hogger::RouteCollection do
   describe "#match" do
     it "creates a Route with specified options" do
       mocked_route = mock
-      Hogger::Route.should_receive(:new).
+      Hogger::Routing::Route.should_receive(:new).
           with("/new_uri", controller: controller_class, action: :create).
           and_return mocked_route
       subject.match("/new_uri", controller: controller_class, action: :create)
@@ -38,7 +38,7 @@ describe Hogger::RouteCollection do
       it "raises a Hogger::RouteNotFoundException" do
         expect {
           subject.dispatch("/unknown")
-        }.to raise_error Hogger::RouteNotFoundException
+        }.to raise_error Hogger::Routing::RouteNotFoundException
       end
     end
   end
