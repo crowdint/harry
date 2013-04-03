@@ -1,3 +1,4 @@
+require 'rack'
 require 'hogger/version'
 require 'hogger/application'
 require 'hogger/controller'
