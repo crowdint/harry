@@ -14,6 +14,22 @@ We don't need Ruby on Rails Engineers in the world, we need Ruby Engineers.
 While Ruby on Rails allows you to easily forget about the entrails of a web app,
 this Framework is about the opposite thing.
 
+## Current Status
+
+To use the sample app go to the *sample-app* directory and run:
+
+    rackup
+
+This app has one controller: *HelloController* and is routed to the */hello* path.
+
+Use your browser to go to *http://127.0.0.1:9292/hello* and you should see the classic
+Hello World message.
+
+The action accepts the name parameter, so, if you go to *http://127.0.0.1:9292/hello?name=John*
+you will see *Hello World John*.
+
+The app file structure is similar to Rails, figure out what the files do.
+
 # About the Author
 
 [Crowd Interactive](http://www.crowdint.com) is a leading Ruby and Rails
