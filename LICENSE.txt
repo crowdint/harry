@@ -1,4 +1,4 @@
-Copyright (c) 2013 David Padilla
+Copyright (c) 2013 Crowd Interactive
 
 MIT License
 
