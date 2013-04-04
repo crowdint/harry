@@ -4,5 +4,5 @@ require 'hogger/cli/create'
 
 application_name = ARGV[0]
 
-hogger = Hogger::CLI::Create.new application_name
+hogger = Muggle::CLI::Create.new application_name
 hogger.create_files

@@ -1,12 +1,12 @@
 require "spec_helper"
 
-describe Hogger::Controller do
+describe Muggle::Controller do
   let(:env) do
     { "QUERY_STRING"=>"name=john&last_name=doe" }
   end
 
   let(:subject) do
-    Hogger::Controller.new env
+    Muggle::Controller.new env
   end
 
   describe "#initialize" do
@@ -15,7 +15,7 @@ describe Hogger::Controller do
     end
 
     it "calls parse_parameters" do
-      Hogger::Controller.any_instance.should_receive(:parse_parameters)
+      Muggle::Controller.any_instance.should_receive(:parse_parameters)
       subject
     end
   end

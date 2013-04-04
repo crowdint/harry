@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/crowdint/hogger/badge.png?branch=master)](https://coveralls.io/r/crowdint/hogger)
 [![Code Climate](https://codeclimate.com/github/crowdint/hogger.png)](https://codeclimate.com/github/crowdint/hogger)
 
-# Hogger
+# Muggle
 
 VERY lightweight web application framework for Ruby.
 

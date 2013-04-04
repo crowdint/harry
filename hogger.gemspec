@@ -5,7 +5,7 @@ require 'hogger/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "hogger"
-  spec.version       = Hogger::VERSION
+  spec.version       = Muggle::VERSION
   spec.authors       = ["David Padilla"]
   spec.email         = ["david@crowdint.com"]
   spec.description   = %q{VERY simple framework for Web Applications}

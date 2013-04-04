@@ -1,4 +1,4 @@
-module Hogger
+module Muggle
   module Routing
     class RouteNotFoundException < Exception ; end
   end

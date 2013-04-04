@@ -1,11 +1,11 @@
-module Hogger
+module Muggle
   class Application
     class << self
       attr_accessor :root_path
     end
 
     def self.routes
-      @@routes ||= Hogger::Routing::RouteCollection.new
+      @@routes ||= Muggle::Routing::RouteCollection.new
     end
 
     def self.routes=(value)
@@ -13,7 +13,7 @@ module Hogger
     end
 
     def self.setup!
-      Hogger::Application.root_path = ENV['HOGGER_ROOT']
+      Muggle::Application.root_path = ENV['HOGGER_ROOT']
       load "config/routes.rb"
     end
 
