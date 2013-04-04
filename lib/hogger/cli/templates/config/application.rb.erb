@@ -10,7 +10,14 @@ Dir[File.join(File.expand_path("../../app/controllers", __FILE__), "*.rb")].each
 #
 # Define the application
 #
-class <%= app_name %> < Hogger::Application ; end
+module <%= app_name %>
+  class Application < Hogger::Application ; end
+end
+
+#
+# Generic Setup of the application
+#
+Hogger::Application.setup!
 
 #
 # Set up the routes

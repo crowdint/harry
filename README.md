@@ -4,7 +4,7 @@
 
 # Hogger
 
-VERY lightweight web application framework for Ruby
+VERY lightweight web application framework for Ruby.
 
 ## Why?
 

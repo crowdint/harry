@@ -1,5 +1,9 @@
 module Hogger
   class Application
+    class << self
+      attr_accessor :root_path
+    end
+
     def self.routes
       @@routes ||= Hogger::Routing::RouteCollection.new
     end
@@ -8,8 +12,8 @@ module Hogger
       @@routes = value
     end
 
-    def initialize
-      self.class.routes ||= Hogger::Routing::RouteCollection.new
+    def self.setup!
+      Hogger::Application.root_path = ENV['HOGGER_ROOT']
     end
 
     def call(env)
