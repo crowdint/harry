@@ -1,6 +1,6 @@
 # Hogger
 
-[![Build Status](https://travis-ci.org/dabit/hogger.png?branch=master)](https://travis-ci.org/dabit/hogger)
+[![Build Status](https://travis-ci.org/crowdint/hogger.png?branch=master)](https://travis-ci.org/crowdint/hogger)
 [![Coverage Status](https://coveralls.io/repos/crowdint/hogger/badge.png?branch=master)](https://coveralls.io/r/crowdint/hogger)
 
 VERY lightweight web application framework for Ruby
