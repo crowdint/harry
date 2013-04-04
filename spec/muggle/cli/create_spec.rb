@@ -1,6 +1,6 @@
 require "spec_helper"
 require "fileutils"
-require "hogger/cli/create"
+require "muggle/cli/create"
 
 describe Muggle::CLI::Create do
   let(:root_path) { "tmp" }

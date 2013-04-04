@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'hogger/cli/create'
+require 'muggle/cli/create'
 
 application_name = ARGV[0]
 
-hogger = Muggle::CLI::Create.new application_name
-hogger.create_files
+muggle = Muggle::CLI::Create.new application_name
+muggle.create_files
