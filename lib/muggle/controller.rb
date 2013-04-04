@@ -1,4 +1,4 @@
-module Hogger
+module Muggle
   class Controller
     attr_accessor :params
     attr_accessor :env

@@ -1,4 +1,4 @@
-module Hogger
+module Muggle
   module Routing
     class Route
       attr_accessor :path, :controller, :action

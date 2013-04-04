@@ -5,4 +5,4 @@ ENV['HOGGER_ROOT'] = File.expand_path(File.dirname(__FILE__))
 
 load "config/application.rb"
 
-run HoggerApp::Application.new
+run MuggleApp::Application.new

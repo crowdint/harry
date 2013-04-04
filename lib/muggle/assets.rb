@@ -2,8 +2,8 @@ module Hogger
   module Assets
     extend self
 
-    require 'hogger/assets/configuration'
-    require 'hogger/assets/middleware'
+    require 'muggle/assets/configuration'
+    require 'muggle/assets/middleware'
 
     def self.configure &block
       block.call(config)

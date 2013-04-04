@@ -1,8 +1,8 @@
 require "spec_helper"
 require "fileutils"
-require "hogger/cli/create"
+require "muggle/cli/create"
 
-describe Hogger::CLI::Create do
+describe Muggle::CLI::Create do
   let(:root_path) { "tmp" }
 
   before do
@@ -11,7 +11,7 @@ describe Hogger::CLI::Create do
     subject.root_path = root_path
   end
 
-  subject { Hogger::CLI::Create.new "HoggerApp" }
+  subject { Muggle::CLI::Create.new "MuggleApp" }
 
   describe "#initialize" do
     it "sets the app_name" do
@@ -30,7 +30,7 @@ describe Hogger::CLI::Create do
     it "creates the folder structure" do
       subject.create_app_folder
       subject.create_app_folder_structure
-      Hogger::CLI::Create::FOLDERS.each do |f|
+      Muggle::CLI::Create::FOLDERS.each do |f|
         Dir.exist?(File.join(root_path, subject.app_name, f)).should be_true
       end
     end
@@ -40,7 +40,7 @@ describe Hogger::CLI::Create do
     it "creates the files" do
       subject.create_app_folder_structure
       subject.create_files
-      Hogger::CLI::Create::FILES.each do |f|
+      Muggle::CLI::Create::FILES.each do |f|
         File.exist?(File.join(subject.root_path, subject.app_name, f)).should be_true
       end
     end

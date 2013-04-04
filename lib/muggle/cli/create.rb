@@ -1,6 +1,6 @@
 require "erb"
 
-module Hogger
+module Muggle
   module CLI
     class Create
       attr_accessor :app_name

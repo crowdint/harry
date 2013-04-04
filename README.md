@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/crowdint/hogger.png?branch=master)](https://travis-ci.org/crowdint/hogger)
-[![Coverage Status](https://coveralls.io/repos/crowdint/hogger/badge.png?branch=master)](https://coveralls.io/r/crowdint/hogger)
-[![Code Climate](https://codeclimate.com/github/crowdint/hogger.png)](https://codeclimate.com/github/crowdint/hogger)
+[![Build Status](https://travis-ci.org/crowdint/muggle.png?branch=master)](https://travis-ci.org/crowdint/muggle)
+[![Coverage Status](https://coveralls.io/repos/crowdint/muggle/badge.png?branch=master)](https://coveralls.io/r/crowdint/muggle)
+[![Code Climate](https://codeclimate.com/github/crowdint/muggle.png)](https://codeclimate.com/github/crowdint/muggle)
 
-# Hogger
+# Muggle
 
-VERY lightweight web application framework for Ruby.
+VERY lightweight web application framework for Ruby. There's no magic in Muggle.
 
 ## Why?
 
@@ -16,11 +16,14 @@ We don't need Ruby on Rails Engineers in the world, we need Ruby Engineers.
 While Ruby on Rails allows you to easily forget about the entrails of a web app,
 this Framework is about the opposite thing.
 
+That means, no Convention over Configuration, no magic behind paths, routes, models
+or any sugar Rails add to your life.
+
 ## Current Status
 
 You can create an app skeleton running the following command:
 
-    hogger NewApp
+    muggle NewApp
 
 Notice that you need to pass the app name as a Ruby class name.
 
