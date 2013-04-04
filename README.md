@@ -4,7 +4,7 @@
 
 # Muggle
 
-VERY lightweight web application framework for Ruby.
+VERY lightweight web application framework for Ruby. There's no magic in Muggle.
 
 ## Why?
 
@@ -15,6 +15,9 @@ We don't need Ruby on Rails Engineers in the world, we need Ruby Engineers.
 
 While Ruby on Rails allows you to easily forget about the entrails of a web app,
 this Framework is about the opposite thing.
+
+That means, no Convention over Configuration, no magic behind paths, routes, models
+or any sugar Rails add to your life.
 
 ## Current Status
 
