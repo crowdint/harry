@@ -6,7 +6,7 @@ module Hogger
       attr_accessor :app_name
       attr_accessor :root_path
 
-      FOLDERS = %w(app app/controllers app/views config)
+      FOLDERS = %w(app app/controllers app/views config app/assets app/assets/javascripts app/assets/stylesheets)
       FILES   = %w(config.ru config/application.rb config/routes.rb Gemfile)
 
       def initialize(app_name)

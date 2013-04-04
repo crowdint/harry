@@ -15,7 +15,13 @@ module <%= app_name %>
 end
 
 #
-# Generic Setup of the application
+# Setup assets
 #
+
+Hogger::Assets.configure do |config|
+  config.append_path 'app/assets/javascripts'
+  config.append_path 'app/assets/stylesheets'
+end
+
 <%= app_name %>::Application.setup!
 
