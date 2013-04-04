@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require "hogger"
 
 RSpec.configure do |config|
