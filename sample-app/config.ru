@@ -1,6 +1,8 @@
 $: << "."
 $: << "lib"
 
+ENV['HOGGER_ROOT'] = File.expand_path(File.dirname(__FILE__))
+
 load "config/application.rb"
 
-run HoggerApp.new
+run HoggerApp::Application.new
