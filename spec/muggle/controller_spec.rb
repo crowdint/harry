@@ -30,7 +30,7 @@ describe Muggle::Controller do
     it "reads the template and parses it with HAML" do
       subject.should_receive(:read_template).with("test.html.haml").
           and_return "%html\n  %title=foo"
-      subject.render("test.html.haml", { "foo" => "bar" }).
+      subject.render("test.html.haml", locals: { "foo" => "bar" }).
           should eq "<html>\n  <title>bar</title>\n</html>\n"
     end
   end
@@ -42,7 +42,7 @@ describe Muggle::Controller do
       subject.should_receive(:read_template).with("test.html.haml").
           and_return "#test content"
 
-      subject.render_with_layout("test.html.haml", "layout.html.haml").
+      subject.render_with_layout("test.html.haml", layout: "layout.html.haml").
           should eq  "<html>\n  <body><div id='test'>content</div></body>\n</html>\n"
     end
   end

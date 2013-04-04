@@ -12,15 +12,15 @@ module Muggle
       self.params = Rack::Utils.parse_nested_query(env["QUERY_STRING"])
     end
 
-    def render(view_path, locals = {})
+    def render(view_path, locals: {})
       template = read_template(view_path)
       Haml::Engine.new(template).render(Object.new, locals)
     end
 
-    def render_with_layout(view_path, layout_name, locals = {})
-      layout = read_layout(layout_name)
-      Haml::Engine.new(layout).render(Object.new, locals) do
-        render(view_path, locals)
+    def render_with_layout(view_path, layout: "", locals: {})
+      layout_template = read_layout(layout)
+      Haml::Engine.new(layout_template).render(Object.new, locals) do
+        render(view_path, locals: locals)
       end
     end
 
