@@ -1,7 +1,7 @@
 $: << "."
 $: << "lib"
 
-ENV['HOGGER_ROOT'] = __dir__
+ENV['HOGGER_ROOT'] = File.expand_path(File.dirname(__FILE__))
 
 load "config/application.rb"
 
