@@ -17,8 +17,20 @@ module Hogger
       Haml::Engine.new(template).render(Object.new, locals)
     end
 
+    def render_with_layout(view_path, layout_name, locals = {})
+      layout = read_layout(layout_name)
+      Haml::Engine.new(layout).render(Object.new, locals) do
+        render(view_path, locals)
+      end
+    end
+
+    protected
     def read_template(view_path)
       File.new(view_path).read
+    end
+
+    def read_layout(layout_name)
+      File.new(layout_name).read
     end
   end
 end

@@ -1,6 +1,6 @@
 class HelloController < Hogger::Controller
   def show
     @name = params["name"]
-    render "app/views/hello/show.html.haml", :name => @name
+    render_with_layout "app/views/hello/show.html.haml", "app/layouts/application.html.haml" ,name: @name
   end
 end
