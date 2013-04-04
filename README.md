@@ -6,6 +6,8 @@
 
 VERY lightweight web application framework for Ruby. There's no magic in Muggle.
 
+Works with Ruby 2.0.0
+
 ## Why?
 
 To teach new programmers the basic of MVC without necesarily exposing them to a
