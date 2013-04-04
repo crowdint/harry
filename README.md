@@ -18,6 +18,14 @@ this Framework is about the opposite thing.
 
 ## Current Status
 
+You can create an app skeleton running the following command:
+
+    hogger NewApp
+
+Notice that you need to pass the app name as a Ruby class name.
+
+### Sample App
+
 To use the sample app go to the *sample-app* directory and run:
 
     rackup
