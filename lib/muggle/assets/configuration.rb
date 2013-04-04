@@ -1,4 +1,4 @@
-module Hogger
+module Muggle
   module Assets
     class Configuration
       attr_reader :load_paths

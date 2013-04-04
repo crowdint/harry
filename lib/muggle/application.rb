@@ -13,7 +13,7 @@ module Muggle
     end
 
     def self.setup!
-      Muggle::Application.root_path = ENV['HOGGER_ROOT']
+      Muggle::Application.root_path = ENV['MUGGLE_ROOT']
       load "config/routes.rb"
     end
 

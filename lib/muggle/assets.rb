@@ -1,4 +1,4 @@
-module Hogger
+module Muggle
   module Assets
     extend self
 
