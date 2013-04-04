@@ -18,8 +18,3 @@ end
 # Generic Setup of the application
 #
 HoggerApp::Application.setup!
-
-#
-# Set up the routes
-#
-load "config/routes.rb"

@@ -14,6 +14,7 @@ module Hogger
 
     def self.setup!
       Hogger::Application.root_path = ENV['HOGGER_ROOT']
+      load "config/routes.rb"
     end
 
     def call(env)
