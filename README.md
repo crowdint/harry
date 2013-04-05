@@ -45,6 +45,22 @@ you will see *Hello World John*.
 
 The app file structure is similar to Rails, figure out what the files do.
 
+# Want to help?
+
+You'll need Ruby 2.0.0
+
+Here's a list of things that still need addressing:
+
+* Serving static files
+* More Routing options
+* Do all request methods work? (POST, DELETE, PUT). Update the sample-app.
+* Models. How are we going to handle DB access? Remember: no magic.
+* Different environments: development, production, test?
+* Reload all files while in development mode.
+* More wiki pages.
+
+Please, test your code.
+
 # About the Author
 
 [Crowd Interactive](http://www.crowdint.com) is a leading Ruby and Rails
