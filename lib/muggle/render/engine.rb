@@ -7,7 +7,11 @@ module Render
     end
 
     def read_template
-      File.new(self.template_path).read
+      read_template_with_path(self.template_path)
+    end
+
+    def read_template_with_path(template_path)
+      File.new(template_path).read
     end
   end
 end
