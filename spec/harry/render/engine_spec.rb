@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Render::Engine do
+describe Harry::Render::Engine do
   describe "#read_template_with_path" do
     it "returns the contents of the specified template file" do
       file          = mock
@@ -10,7 +10,7 @@ describe Render::Engine do
       File.should_receive(:new).with(template_path).and_return(file)
       file.should_receive(:read).and_return file_content
 
-      engine = Render::Engine.new(template_path)
+      engine = Harry::Render::Engine.new(template_path)
       engine.read_template_with_path(template_path)
     end
   end
@@ -19,7 +19,7 @@ describe Render::Engine do
     it "reads the default template specified on init" do
       template_path = "TEMPLATE_PATH"
       content       = mock
-      engine        = Render::Engine.new(template_path)
+      engine        = Harry::Render::Engine.new(template_path)
 
       engine.should_receive(:read_template_with_path).with(template_path).and_return(content)
       engine.read_template.should be content
