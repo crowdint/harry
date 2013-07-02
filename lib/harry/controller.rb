@@ -1,4 +1,4 @@
-module Muggle
+module Harry
   class Controller
     attr_accessor :params
     attr_accessor :env

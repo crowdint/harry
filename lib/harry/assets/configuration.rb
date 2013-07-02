@@ -1,4 +1,4 @@
-module Muggle
+module Harry
   module Assets
     class Configuration
       attr_reader :load_paths

@@ -1,4 +1,4 @@
-module Muggle
+module Harry
   module Routing
     class RouteCollection
       attr_accessor :routes

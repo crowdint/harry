@@ -1,12 +1,12 @@
 require "spec_helper"
 
-describe Muggle::Routing::Route do
+describe Harry::Routing::Route do
   let(:controller_class) do
     Class.new
   end
 
   subject do
-    Muggle::Routing::Route.new "/home", controller: controller_class, action: :new
+    Harry::Routing::Route.new "/home", controller: controller_class, action: :new
   end
 
   describe :initialize do

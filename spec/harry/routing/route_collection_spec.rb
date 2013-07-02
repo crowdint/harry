@@ -1,12 +1,12 @@
 require "spec_helper"
 
-describe Muggle::Routing::RouteCollection do
+describe Harry::Routing::RouteCollection do
   let(:controller_class) do
     Class.new
   end
 
   let(:route) do
-    Muggle::Routing::Route.new "/hello", controller: controller_class, action: :new
+    Harry::Routing::Route.new "/hello", controller: controller_class, action: :new
   end
 
   before do
@@ -16,7 +16,7 @@ describe Muggle::Routing::RouteCollection do
   describe "#match" do
     it "creates a Route with specified options" do
       mocked_route = mock
-      Muggle::Routing::Route.should_receive(:new).
+      Harry::Routing::Route.should_receive(:new).
           with("/new_path", controller: controller_class, action: :create).
           and_return mocked_route
       subject.match("/new_path", controller: controller_class, action: :create)
@@ -35,10 +35,10 @@ describe Muggle::Routing::RouteCollection do
     end
 
     context "A route that does not exist" do
-      it "raises a Muggle::RouteNotFoundException" do
+      it "raises a Harry::RouteNotFoundException" do
         expect {
           subject.dispatch("/unknown")
-        }.to raise_error Muggle::Routing::RouteNotFoundException
+        }.to raise_error Harry::Routing::RouteNotFoundException
       end
     end
   end

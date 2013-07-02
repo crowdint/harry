@@ -1,8 +1,8 @@
 require "spec_helper"
 require "fileutils"
-require "muggle/cli/create"
+require "harry/cli/create"
 
-describe Muggle::CLI::Create do
+describe Harry::CLI::Create do
   let(:root_path) { "tmp" }
 
   before do
@@ -11,7 +11,7 @@ describe Muggle::CLI::Create do
     subject.root_path = root_path
   end
 
-  subject { Muggle::CLI::Create.new "MuggleApp" }
+  subject { Harry::CLI::Create.new "HarryApp" }
 
   describe "#initialize" do
     it "sets the app_name" do
@@ -30,7 +30,7 @@ describe Muggle::CLI::Create do
     it "creates the folder structure" do
       subject.create_app_folder
       subject.create_app_folder_structure
-      Muggle::CLI::Create::FOLDERS.each do |f|
+      Harry::CLI::Create::FOLDERS.each do |f|
         Dir.exist?(File.join(root_path, subject.app_name, f)).should be_true
       end
     end
@@ -40,7 +40,7 @@ describe Muggle::CLI::Create do
     it "creates the files" do
       subject.create_app_folder_structure
       subject.create_files
-      Muggle::CLI::Create::FILES.each do |f|
+      Harry::CLI::Create::FILES.each do |f|
         File.exist?(File.join(subject.root_path, subject.app_name, f)).should be_true
       end
     end

@@ -10,11 +10,11 @@ Dir[File.join(File.expand_path("../../app/controllers", __FILE__), "*.rb")].each
 #
 # Define the application
 #
-module MuggleApp
-  class Application < Muggle::Application ; end
+module HarryApp
+  class Application < Harry::Application ; end
 end
 
 #
 # Generic Setup of the application
 #
-MuggleApp::Application.setup!
+HarryApp::Application.setup!

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Muggle::Assets::Configuration do
+describe Harry::Assets::Configuration do
   describe '#initialize' do
     it 'initialize @load_paths with and empty array' do
       expect(subject.load_paths).to be_empty

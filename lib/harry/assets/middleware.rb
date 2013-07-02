@@ -1,4 +1,4 @@
-module Muggle
+module Harry
   module Assets
     class Middleware
       attr_reader :environment, :app
