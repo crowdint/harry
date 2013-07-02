@@ -4,9 +4,11 @@
 
 # Harry
 
-VERY lightweight web application framework for Ruby. There's no magic in Harry.
+VERY lightweight web application framework for Ruby. Harry is half human, half wizard.
 
 Works with Ruby 2.0.0
+
+At this point you should not be using this for serious applications.
 
 ## Why?
 
