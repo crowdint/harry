@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'muggle/version'
+require 'harry/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "muggle"
-  spec.version       = Muggle::VERSION
+  spec.name          = "harry"
+  spec.version       = Harry::VERSION
   spec.authors       = ["David Padilla"]
   spec.email         = ["david@crowdint.com"]
   spec.description   = %q{VERY simple framework for Web Applications}

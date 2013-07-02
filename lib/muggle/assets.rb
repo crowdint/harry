@@ -1,9 +1,9 @@
-module Muggle
+module Harry
   module Assets
     extend self
 
-    require 'muggle/assets/configuration'
-    require 'muggle/assets/middleware'
+    require 'harry/assets/configuration'
+    require 'harry/assets/middleware'
 
     def self.configure &block
       block.call(config)

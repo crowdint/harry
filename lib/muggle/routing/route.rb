@@ -1,4 +1,4 @@
-module Muggle
+module Harry
   module Routing
     class Route
       attr_accessor :path, :controller, :action

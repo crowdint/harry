@@ -1,14 +1,14 @@
 require 'spec_helper'
 
-describe Muggle::Assets::Middleware do
+describe Harry::Assets::Middleware do
   let(:app) { mock(call: mock) }
   let(:env) { mock }
   let(:app_env) { Hash.new }
 
-  subject { Muggle::Assets::Middleware.new(app) }
+  subject { Harry::Assets::Middleware.new(app) }
 
   before do
-    Muggle::Assets.config.stub load_paths: ['load/path']
+    Harry::Assets.config.stub load_paths: ['load/path']
     Sprockets::Environment.should_receive(:new).and_return env
     env.should_receive(:append_path).with('load/path')
   end

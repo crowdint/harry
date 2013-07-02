@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/crowdint/muggle.png?branch=master)](https://travis-ci.org/crowdint/muggle)
-[![Coverage Status](https://coveralls.io/repos/crowdint/muggle/badge.png?branch=master)](https://coveralls.io/r/crowdint/muggle)
-[![Code Climate](https://codeclimate.com/github/crowdint/muggle.png)](https://codeclimate.com/github/crowdint/muggle)
+[![Build Status](https://travis-ci.org/crowdint/harry.png?branch=master)](https://travis-ci.org/crowdint/harry)
+[![Coverage Status](https://coveralls.io/repos/crowdint/harry/badge.png?branch=master)](https://coveralls.io/r/crowdint/harry)
+[![Code Climate](https://codeclimate.com/github/crowdint/harry.png)](https://codeclimate.com/github/crowdint/harry)
 
-# Muggle
+# Harry
 
-VERY lightweight web application framework for Ruby. There's no magic in Muggle.
+VERY lightweight web application framework for Ruby. There's no magic in Harry.
 
 Works with Ruby 2.0.0
 
@@ -25,7 +25,7 @@ or any sugar Rails add to your life.
 
 You can create an app skeleton running the following command:
 
-    muggle NewApp
+    harry NewApp
 
 Notice that you need to pass the app name as a Ruby class name.
 

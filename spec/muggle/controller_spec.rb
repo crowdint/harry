@@ -1,12 +1,12 @@
 require "spec_helper"
 
-describe Muggle::Controller do
+describe Harry::Controller do
   let(:env) do
     { "QUERY_STRING"=>"name=john&last_name=doe" }
   end
 
   let(:subject) do
-    Muggle::Controller.new env
+    Harry::Controller.new env
   end
 
   describe "#initialize" do
@@ -15,7 +15,7 @@ describe Muggle::Controller do
     end
 
     it "calls parse_parameters" do
-      Muggle::Controller.any_instance.should_receive(:parse_parameters)
+      Harry::Controller.any_instance.should_receive(:parse_parameters)
       subject
     end
   end

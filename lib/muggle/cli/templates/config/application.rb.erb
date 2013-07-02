@@ -11,14 +11,14 @@ Dir[File.join(File.expand_path("../../app/controllers", __FILE__), "*.rb")].each
 # Define the application
 #
 module <%= app_name %>
-  class Application < Muggle::Application ; end
+  class Application < Harry::Application ; end
 end
 
 #
 # Setup assets
 #
 
-Muggle::Assets.configure do |config|
+Harry::Assets.configure do |config|
   config.append_path 'app/assets/javascripts'
   config.append_path 'app/assets/stylesheets'
 end

@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'muggle/cli/create'
+require 'harry/cli/create'
 
 application_name = ARGV[0]
 
-muggle = Muggle::CLI::Create.new application_name
-muggle.create_files
+harry = Harry::CLI::Create.new application_name
+harry.create_files

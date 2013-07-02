@@ -1,11 +1,11 @@
-module Muggle
+module Harry
   class Application
     class << self
       attr_accessor :root_path
     end
 
     def self.routes
-      @@routes ||= Muggle::Routing::RouteCollection.new
+      @@routes ||= Harry::Routing::RouteCollection.new
     end
 
     def self.routes=(value)
@@ -13,7 +13,7 @@ module Muggle
     end
 
     def self.setup!
-      Muggle::Application.root_path = ENV['MUGGLE_ROOT']
+      Harry::Application.root_path = ENV['MUGGLE_ROOT']
       load "config/routes.rb"
     end
 
